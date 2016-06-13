@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    h1= title
+    form#formAddUser(name="adduser",method="post",action="/adduser")
+        input#inputUserCpf(type="text", placeholder="CPF", name="usercpf")
+        input#inputUserSexo(type="text", placeholder="SEXO", name="usersexo")
+        input#inputUserRenda(type="text", placeholder="RENDA em R$", name="userrenda")
+        button#btnSubmit(type="submit") submit
